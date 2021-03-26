@@ -11,7 +11,7 @@ For this digital tools assignment, I was interested in encoding a document that 
 <!--more-->
 
 ### Ellen Wright
-Through the Shakespeare and Company Project website, I selected the collection of [all cards associated with Ellen Wright](https://shakespeareandco.princeton.edu/members/wright-ellen/cards/0d89fdbb-a48a-4bfa-8690-c53234d02331/),  an American living in Paris with her husband, the acclaimed African-American author Richard Wright. There are two cards associated with Wright, pictured below:
+Through the Shakespeare and Company Project website, I selected the collection of [all cards associated with Ellen Wright](https://shakespeareandco.princeton.edu/members/wright-ellen/cards/0d89fdbb-a48a-4bfa-8690-c53234d02331/), an American living in Paris with her husband, the acclaimed African American author Richard Wright. There are two cards associated with Wright, pictured below:
 
 ![Front of Card 1](https://iiif.princeton.edu/loris/figgy_prod/13%2Fe8%2F39%2F13e839f94ac344f7bc0a5793c5c4df80%2Fintermediate_file.jp2/full/450,/0/default.jpg)
 
@@ -192,9 +192,9 @@ In order to categorize the information, I created a root tag that nested the sep
 
 The first question I encountered was how to encode the dates listed on the cards. While I considered creating an element for each book which would include the borrowing date, data on the book itself, and the return date, many of the books were listed under one borrow date, and it did not feel accurate to repeatedly include the same date if it was not written on the original document. I also considered nesting the information about a book inside the tags related to its borrow date, but chose not to as borrow/return dates were not consistently available for all entries. 
 
-This question led me to nest each section of text by color in an element ```<text>```, which has an associated attribute to note the color of the text, which implicitly carries information on when a given entry or set of entries was made. Within this element, I included ```<date-start>``` and ```<date-end>``` elements to differentiate between the borrow and return dates for each book. This allowed each date to exist as an individual element, rather than being explicitly connected to a particular title. I also included elements for the book's title, author, and publication information when provided.
+This question led me to nest each section of text by color in an element ```<text>```, which has an associated attribute to note the color of the text, which implicitly carries information on when a given entry or set of entries was made. Within this element, I included ```<date-start>``` and ```<date-end>``` elements to differentiate between the borrow and return dates for each book. This allowed each date to exist as an individual element, rather than being explicitly connected to a particular title. I also included elements for the book's title, author, and publication information when provided. When text was circled, crossed out, or unclear, I added elements to reflect these aspects of the text.
 
-Finally, I tagged indiviudals mentioned within the entries and notes on the cards. In some cases, where an individual was referred to in relation to their own work, I chose to use the ```<author>``` tag. When the note referred to the behavior or actions of a given individual, I checked if they were also members of Shakespeare and Company, and tagged them using ```<member-name>```, the same tag used in the heading to identify Wright.
+Finally, I tagged individuals mentioned within the entries and notes on the cards. In some cases, where an individual was referred to in relation to their own work, I chose to use the ```<author>``` tag. When the note referred to the behavior or actions of a given individual, I checked if they were also members of Shakespeare and Company and tagged them using ```<member-name>```, the same tag used in the heading to identify Wright.
 
 ### Questions and Challenges
 
