@@ -1,4 +1,10 @@
-'''<div type='all-lending-library-cards'>
+---
+layout: post
+author: Sophie Goldman
+title: Encoding the Lending Library
+---
+
+``` <div type='all-lending-library-cards'>
 	<div type="lending-library-card">
 		<side type="front">
 			<heading>
@@ -166,4 +172,5 @@
 		</side>
 		<side type="reverse"/>
 	</div>
-</div>'''
+</div>
+```
